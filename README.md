@@ -1,38 +1,56 @@
 # Credit-Card-Fraud-Detection-System
-Overview:
-This project is a Credit Card Fraud Detection System that uses machine learning to identify fraudulent transactions in real-time. The system analyzes transaction patterns and detects anomalies to prevent fraud effectively.
+Overview
+This project implements a Credit Card Fraud Detection System using Logistic Regression. It aims to classify transactions as fraudulent or legitimate based on historical transaction data.
 
+Dataset
+The model is trained on a dataset containing transaction details, including:
+
+Time
+Amount
+Transaction type
+Cardholder information
+Fraud labels (0 = Legitimate, 1 = Fraudulent)
 Features
-Data Preprocessing: Cleans and transforms transaction data for accurate predictions.
-Machine Learning Models: Implements algorithms such as Logistic Regression, Random Forest, XGBoost, and Neural Networks.
-Real-time Detection: Predicts fraud using live transaction streams.
-Explainability: Provides insights into why a transaction is flagged as fraudulent.
-Visualization & Reporting: Displays fraud trends through dashboards and reports.
+✅ Logistic Regression Model for binary classification
+✅ Data Preprocessing (handling missing values, scaling, encoding)
+✅ Feature Engineering (selecting important fraud indicators)
+✅ Model Evaluation (accuracy, precision, recall, F1-score, AUC-ROC)
+✅ Visualization (fraud distribution, correlation heatmaps)
+
 Technologies Used
-Python (NumPy, Pandas, Scikit-learn, TensorFlow, XGBoost)
-Flask/Django (for API integration)
-PostgreSQL / MongoDB (for transaction data storage)
-Kafka / RabbitMQ (for real-time transaction processing)
-How It Works
-Data Collection: Loads transaction data (e.g., time, amount, location, cardholder details).
-Feature Engineering: Extracts key fraud indicators (e.g., unusual spending behavior).
-Model Training: Trains ML models on historical transaction data.
-Fraud Prediction: Classifies new transactions as fraudulent or legitimate.
-Alert Generation: Sends notifications for flagged transactions.
+Python (Pandas, NumPy, Matplotlib, Seaborn)
+Scikit-learn (Logistic Regression, Metrics, Train-Test Split)
+Jupyter Notebook (for model training & evaluation)
 Installation
+Clone this repository:
 bash
 Copy
 Edit
 git clone https://github.com/your-repo/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
+Install dependencies:
+bash
+Copy
+Edit
 pip install -r requirements.txt
-python app.py
-Usage
-Upload a dataset of transactions.
-Run the model to detect fraud.
-View results on the dashboard.
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
+Run the Jupyter Notebook:
+bash
+Copy
+Edit
+jupyter notebook
+Model Performance
+The model is evaluated using:
+
+Accuracy: Measures overall correctness
+Precision: Identifies fraud detection reliability
+Recall: Detects fraudulent transactions correctly
+F1-Score: Balances precision and recall
+AUC-ROC: Measures classification effectiveness
+Results
+The trained Logistic Regression model achieves high accuracy with a good balance between precision and recall, effectively detecting fraudulent transactions.
+
+Contributions
+Feel free to contribute! Open an issue or submit a pull request.
 
 License
 MIT License
