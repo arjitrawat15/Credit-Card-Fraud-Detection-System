@@ -1,5 +1,4 @@
 # Credit-Card-Fraud-Detection-System
-Credit Card Fraud Detection System
 Overview
 This project is a Credit Card Fraud Detection System that uses machine learning to identify fraudulent transactions in real-time. The system analyzes transaction patterns and detects anomalies to prevent fraud effectively.
 
